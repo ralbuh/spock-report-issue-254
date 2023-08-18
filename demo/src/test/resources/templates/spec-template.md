@@ -29,7 +29,7 @@ out << '<pre>\n' << data.info.narrative << '\n</pre>'
                 out << '* ' << tag.url << '\n'
             }
         }
-        if ( feature.attachments.size > 0 ) {
+        if ( feature.attachments.size() > 0 ) {
             out << '\n#### ' << 'See:' << '\n\n'
             feature.attachments.each { value ->
                 out << '* ' << value.url << '\n'
